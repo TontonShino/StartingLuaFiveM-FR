@@ -87,6 +87,11 @@ sauf les nil et même 0 correspond à une valeur true
        avec les deux points, il faut passer en argument à Objet.methode()self ; 
        en effet, l'appel Objet:methode() donne implicitement en argument l'objet
         parent, désigné par le mot-clé self.
+Commentaires Maenn:La différence entre un seul point et deux points quand on appelle une méthode, c'est que quand tu appelles une méthode avec un seul point, rien de bizarre
+Mais quand tu l'appelles avec deux points, ça donne en tant que premier paramètre Objet
+Donc
+Objet.methode(Objet) = Objet:methode()
+Objet.methode(Objet, 2) = Objet:methode(2)
   ]]--
 
 --[[
